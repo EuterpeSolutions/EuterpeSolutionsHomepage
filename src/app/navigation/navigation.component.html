@@ -1,6 +1,6 @@
 <header class="masthead">
   <div class="inner">
-    <h3 class="masthead-brand">Euterpe Solutions</h3>
+    <h3 class="masthead-brand" routerLink="/home">Euterpe Solutions</h3>
     <nav class="nav nav-masthead justify-content-center">
       <div *ngFor="let link of links" >
         <a *ngIf="link?.active else notActive" class="nav-link active" routerLink='{{link?.link}}'>{{link?.title}}</a>
