@@ -9,30 +9,26 @@
     </div>
   </div>
   <div class="row" *ngFor="let cardRow of cards">
-    <div class="col-md-6" *ngFor="let card of cardRow">
+    <div class="col-md-4" *ngFor="let card of cardRow">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title text-center">{{card?.title}}</h5>
             <hr>
             <p class="card-text">{{card?.text}}</p>
-            <br/>
             <hr>
             <p class="cart-subtitle">Advantages</p>
             <ul class="card-bullet-list">
                 <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
             </ul>
-            <br/>
             <hr>
             <p class="cart-subtitle">Price</p>
             <ul class="card-bullet-list">
                 <li *ngFor="let price of card?.prices">{{price}}</li>
             </ul>
             <hr>
-            <br/>
             <div class="text-center">
               <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
             </div>
-            <br/>
           </div>
         </div>
     </div>

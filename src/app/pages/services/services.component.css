@@ -1,6 +1,7 @@
 /* Info Cards at the bottom of the page */
 .card {
   color: #333;
+  height: 100%;
 }
 
 .row {

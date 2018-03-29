@@ -44,16 +44,14 @@ export class ServicesComponent implements OnInit {
           'Contact us for a quote'
         ]
       },
-    ],
-    [
       {
         'title': 'Wordpress',
       },
+    ],
+    [
       {
         'title': 'Hosting',
       },
-    ],
-    [
       {
         'title': 'Consulting',
       },
