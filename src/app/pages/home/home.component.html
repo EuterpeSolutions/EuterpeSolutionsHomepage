@@ -1,4 +1,4 @@
-<main role="main" class="inner cover">
+<div class="home-layout">
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
@@ -17,78 +17,20 @@
     </div>
     <div class="col-md-4"></div>
   </div>
-  <div class="spacer">
-
-  </div>
   <div class="row">
-    <div class="col-md-3">
+    <div class="{{bootstrapCol}}" *ngFor="let card of cards">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Web Development</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
+          <h5 class="card-title">{{card?.title}}</h5>
+          <hr>
+          <p class="card-text">{{card?.text}}</p>
+          <ul class="card-bullet-list">
+              <li *ngFor="let bulletPoint of card?.bulletPoints">{{bulletPoint}}</li>
           </ul>
           <br/><br/>
-          <a routerLink='/services' class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Wordpress Setup</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-          </ul>
-          <br/><br/>
-          <a routerLink='/services' class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Feature Development</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-          </ul>
-          <br/><br/>
-          <a routerLink='/services' class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Technical Consulting</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-            <li>Bullet Point</li>
-          </ul>
-          <br/><br/>
-          <a routerLink='/services' class="btn btn-primary">Learn More</a>
+          <a routerLink="{{card?.route}}" class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>
   </div>
-
-</main>
+</div>
