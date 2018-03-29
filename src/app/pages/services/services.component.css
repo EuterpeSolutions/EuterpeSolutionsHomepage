@@ -1,0 +1,12 @@
+/* Info Cards at the bottom of the page */
+.card {
+  color: #333;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.cart-subtitle {
+  font-weight: bolder;
+}
