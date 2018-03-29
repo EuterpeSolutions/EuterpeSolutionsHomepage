@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
+  // All the links for the navigation
   links = [
     {
       title: 'Home',
@@ -34,6 +35,8 @@ export class NavigationComponent implements OnInit {
   ]
 
   constructor(private router: Router) {
+    // When a user navigates to a page change the active flag to true so that the
+    // Navigation indicates which is the current page
     router.events.filter(event => event instanceof NavigationEnd)
     .subscribe((event) => {
       for( let i = 0; i < this.links.length; i++ ) {
@@ -43,7 +46,7 @@ export class NavigationComponent implements OnInit {
           this.links[i].active = false;
         }
       }
-    })
+    });
   }
 
   ngOnInit() {
