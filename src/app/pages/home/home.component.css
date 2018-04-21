@@ -35,3 +35,12 @@
 .centericon {
   vertical-align: center;
 }
+
+input.ng-invalid.ng-touched
+{
+   border-color: red;
+}
+
+button a {
+  color: #333;
+}
