@@ -1,13 +1,25 @@
 <header class="masthead">
   <div class="inner">
-    <h3 class="masthead-brand" routerLink="/home">Euterpe Solutions</h3>
-    <nav class="nav nav-masthead justify-content-center">
-      <div *ngFor="let link of links" >
-        <a *ngIf="link?.active else notActive" class="nav-link active" routerLink='{{link?.link}}'>{{link?.title}}</a>
-        <ng-template #notActive>
-          <a class="nav-link" routerLink='{{link?.link}}'>{{link?.title}}</a>
-        </ng-template>
+    <div class="row">
+      <div class="col-sm-1" style="padding-right:0px;">
+        <img src="assets/LawtonLogoCircle.png" width="50px" height="50px" alt="" style="float:right;">
       </div>
-    </nav>
+      <div class="col-sm-3" style="padding-left:0px;">
+        <h3 style="margin-top:5px;"class="masthead-brand" routerLink="/home">Euterpe Solutions</h3>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+        <nav class="nav nav-masthead">
+          <div *ngFor="let link of links" >
+            <a *ngIf="link?.active else notActive" class="nav-link active" routerLink='{{link?.link}}'>{{link?.title}}</a>
+            <ng-template #notActive>
+              <a class="nav-link" routerLink='{{link?.link}}'>{{link?.title}}</a>
+            </ng-template>
+          </div>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
