@@ -13,46 +13,22 @@ export class HomeComponent implements OnInit {
         'title': 'Web Development',
         'text': 'Some quick example text to build on the card\
                 title and make up the bulk of the card\'s content.',
-        'bulletPoints': [
-          'A point',
-          'Another point',
-          'Yay points',
-          'another one',
-        ],
-        'route': '/services',
+        'icon': 'file-text',
     } , {
         'title': 'Wordpress Setup',
         'text': 'Some quick example text to build on the card\
                 title and make up the bulk of the card\'s content.',
-        'bulletPoints': [
-          'A point',
-          'Another point',
-          'Yay points',
-          'another one',
-        ],
-        'route': '/services',
+        'icon': 'wordpress',
     } , {
         'title': 'Feature Development',
         'text': 'Some quick example text to build on the card\
                 title and make up the bulk of the card\'s content.',
-        'bulletPoints': [
-          'A point',
-          'Another point',
-          'Yay points',
-          'another one',
-        ],
-        'route': '/services',
+        'icon': 'bolt',
     } , {
         'title': 'Technical Consulting',
         'text': 'Some quick example text to build on the card\
                 title and make up the bulk of the card\'s content.',
-        'bulletPoints': [
-          'A point',
-          'Another point',
-          'Yay points',
-          'another one',
-        ],
-        'route': '/services',
+        'icon': 'lightbulb-o',
     },
   ]
 

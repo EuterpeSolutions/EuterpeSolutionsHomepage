@@ -36,6 +36,12 @@ body {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #df0000;
   border: .05rem solid #403e3e;
+  width: 300px;
+  height: 75px;
+}
+
+.btn-secondary {
+  padding-top:20px;
 }
 
 app-root {

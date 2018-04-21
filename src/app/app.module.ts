@@ -11,6 +11,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

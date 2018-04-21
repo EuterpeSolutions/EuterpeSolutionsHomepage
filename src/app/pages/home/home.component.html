@@ -10,9 +10,9 @@
     <div class="row tall-row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-          <h1 class="cover-heading">Affordable. Simple. Solutions</h1>
+          <h1 class="cover-heading">Affordable. Simple. Solutions.</h1>
           <p>Delivering quick professional websites for any budget</p>
-          <br>
+          <br><br>
           <p class="lead">
             <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
           </p>
@@ -26,18 +26,37 @@
       <div class="{{bootstrapCol}}" *ngFor="let card of cards">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">{{card?.title}}</h5>
+            <div class="text-center">
+                <fa name={{card?.icon}} class="fa-5x center"></fa>
+                <h5 class="card-title">{{card?.title}}</h5>
+            </div>
             <hr>
             <p class="card-text">{{card?.text}}</p>
-            <ul class="card-bullet-list">
-                <li *ngFor="let bulletPoint of card?.bulletPoints">{{bulletPoint}}</li>
-            </ul>
             <br/><br/>
-            <a routerLink="{{card?.route}}" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
     </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <a routerLink="/services" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="row">
+    <div class="col-md-2">
 
+    </div>
+    <div class="col-md-8">
+      <div class="text-center">
+        yo
+      </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
 </div>
