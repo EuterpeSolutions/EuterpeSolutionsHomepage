@@ -5,11 +5,29 @@
 }
 
 /* Space between the logo cover and the cards */
-.row {
-  margin-top: 200px;
+.tall-row {
+  margin-top: 15%;
 }
 
 /* Info Cards at the bottom of the page */
 .card {
   color: #333;
+  background-color: #fff;
+}
+
+.content {
+  background-color: #df0000;
+  padding: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 15%;
+  padding-top: 45px;
+  /* color: #c2c2c2; */
+}
+
+.centerheader {
+  text-align: center;
+  margin-bottom:100px;
+  margin-top:0px;
+  padding-top:0px;
 }

@@ -7,21 +7,21 @@
 html,
 body {
   height: 100%;
-  background-color: #670907;
-  background-image: url('/assets/homebackground.jpg');
+  background-color: #403e3e;
+  /* background-image: url('/assets/homebackground.jpg'); */
   /* //background-color: #000; */
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100%;
 }
 body {
-  display: -ms-flexbox;
+  /* display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
-  justify-content: center;
-  color: #444;
+  justify-content: center; */
+  color: #ffffff;
 }
 
 /*
@@ -34,11 +34,11 @@ body {
 .btn-secondary:focus {
   color: #eee;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #670907;
-  border: .05rem solid #222;
+  background-color: #df0000;
+  border: .05rem solid #403e3e;
 }
 
 app-root {
-  width: 90%;
+  width: 100%;
   /* background-color: #670907; */
 }
