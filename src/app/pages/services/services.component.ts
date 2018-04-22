@@ -44,21 +44,38 @@ export class ServicesComponent implements OnInit {
           'Contact us for a quote'
         ]
       },
-      {
-        'title': 'Wordpress',
-      },
+
     ],
     [
       {
+        'title': 'WordPress',
+        'text': `
+          WordPress is the most popular website management or blogging system in
+          use with more than 60 million users. WordPress blogs can either be created
+          on WordPress.com or, because it is free and open-source, on a server running
+          WordPress.
+        `,
+        'advantages': [
+          'No technical skills needed to update content',
+          'Common platform with many themes and widgets',
+        ],
+        'prices': [
+          '$1,000 base cost',
+          '$100 per page',
+        ]
+      },
+      {
         'title': 'Hosting',
       },
+    ],
+    [
       {
         'title': 'Consulting',
       },
       {
         'title': 'Security',
       },
-    ],
+    ]
   ]
 
   constructor() { }

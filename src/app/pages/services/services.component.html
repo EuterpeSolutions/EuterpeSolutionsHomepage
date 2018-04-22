@@ -1,15 +1,24 @@
 <div class="services-layout">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body">
-          {{pageInfo}}
-        </div>
-      </div>
+  <hr class="white-hr">
+  <div class="row header">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <!-- <div class="card">
+        <div class="card-body"> -->
+        <h2 class="text-center">Services</h2>
+        <br>
+        <p>  {{pageInfo}} </p>
+        <!-- </div>
+      </div> -->
     </div>
+    <div class="col-md-1"></div>
   </div>
+  <hr class="white-hr">
   <div class="row" *ngFor="let cardRow of cards">
-    <div class="col-md-4" *ngFor="let card of cardRow">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-5" *ngFor="let card of cardRow">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title text-center">{{card?.title}}</h5>
@@ -31,6 +40,9 @@
             </div>
           </div>
         </div>
+    </div>
+    <div class="col-md-1">
+
     </div>
   </div>
 </div>

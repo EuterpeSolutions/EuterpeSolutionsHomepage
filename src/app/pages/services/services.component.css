@@ -11,3 +11,18 @@
 .cart-subtitle {
   font-weight: bolder;
 }
+
+.header {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  background-color: #df0000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content {
+  background-color: #df0000;
+  padding: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
