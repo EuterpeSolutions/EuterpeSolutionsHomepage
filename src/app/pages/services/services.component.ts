@@ -2,13 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  templateUrl: '../pages.component.html',
+  styleUrls: ['../pages.component.css']
 })
 export class ServicesComponent implements OnInit {
+  topRowClass = 'top-row'
+  headerTitle = 'Services'
+  topRowH2Class = 'text-center'
   pageInfo = `Euterpe Solutions offers a wide variety of website, and website related, services. We
               strive to maintain affordable prices, convienent solutions, and friendly service.`
-  headerTitle = 'Services'
+  bootstrapCol: string;
   cards = [
     [
       {
@@ -82,6 +85,7 @@ export class ServicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.bootstrapCol = 'col-md-' + (12 / this.cards[0].length).toString();
   }
 
 }

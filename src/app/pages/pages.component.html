@@ -1,53 +1,57 @@
-<div class="home-layout">
-  <div class="text-center">
-    <!-- <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-          <img src="assets/LawtonLogoCircle.png" width="350px" height="350px" alt="">
-      </div>
-      <div class="col-md-4"></div>
-    </div> -->
-    <div class="row tall-row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-          <h1 class="cover-heading">Affordable. Simple. Solutions.</h1>
-          <p>Delivering quick professional websites for any budget</p>
-          <br><br>
-          <p class="lead">
-            <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
-          </p>
-      </div>
-      <div class="col-md-4"></div>
+<div class="layout">
+<!-- TOP ROW -->
+  <hr class="white-hr" *ngIf="isHome === undefined">
+  <div class="row {{topRowClass}}">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h2 class={{topRowH2Class}}>{{headerTitle}}</h2>
+        <br *ngIf="isHome === undefined">
+        <p class={{topRowPClass}}>  {{pageInfo}} </p>
+        <p class="lead text-center" *ngIf="isHome !== undefined">
+          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
     </div>
+    <div class="col-md-1"></div>
   </div>
-  <div class="content">
-    <h2 class="text-center">Features</h2>
-    <hr>
-    <div class="row">
-      <div class="{{bootstrapCol}}" *ngFor="let card of cards">
+  <hr class="white-hr" *ngIf="isHome === undefined">
+<!-- END TOP ROW -->
+
+<!-- BOTTOM ROW -->
+  <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
+    <div class="{{bootstrapCol}}" *ngFor="let card of cardRow">
         <div class="card">
           <div class="card-body">
             <div class="text-center">
-                <fa name={{card?.icon}} class="fa-5x center"></fa>
-                <h5 class="card-title">{{card?.title}}</h5>
+              <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
+              <h5 class="card-title">{{card?.title}}</h5>
             </div>
             <hr>
             <p class="card-text">{{card?.text}}</p>
-            <br/><br/>
+            <hr>
+            <div class="advantages" *ngIf="card?.advantages !== undefined">
+              <p class="cart-subtitle">Advantages</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="price" *ngIf="card?.prices !== undefined">
+              <p class="cart-subtitle">Price</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let price of card?.prices">{{price}}</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="text-center">
+              <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <br><br>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="text-center">
-          <a routerLink="/services" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
     </div>
   </div>
-  <br><br>
+<!-- END BOTTOM ROW -->
+<!-- CONTACT FORM -->
+  <hr class="white-hr">
   <div class="row">
     <div class="col-md-12">
       <h2 class="text-center">Contact</h2>
@@ -55,9 +59,7 @@
   </div>
   <hr class="white-hr">
   <div class="row">
-    <div class="col-md-2">
-
-    </div>
+    <div class="col-md-2"></div>
     <div class="col-md-8">
       <p>For more information or to get a quote on a specific project please fill out the following form and the staff at Euterpe Solutions will get back to you as soon as they can.</p>
       <div class="text-center">
@@ -85,8 +87,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-2">
-
-    </div>
+    <div class="col-md-2"></div>
   </div>
+<!-- END CONTACT FORM -->
 </div>

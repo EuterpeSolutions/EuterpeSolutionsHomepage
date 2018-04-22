@@ -1,3 +1,32 @@
+/* Info Cards at the bottom of the page */
+.card {
+  color: #333;
+  height: 100%;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.cart-subtitle {
+  font-weight: bolder;
+}
+
+.top-row {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  background-color: #df0000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* .content {
+  background-color: #df0000;
+  padding: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+} */
+
 /* Learn more button */
 .cover .btn-lg {
   padding: .75rem 1.25rem;
