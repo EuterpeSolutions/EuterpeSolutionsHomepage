@@ -3,21 +3,15 @@
   <div class="row header">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-      <!-- <div class="card">
-        <div class="card-body"> -->
-        <h2 class="text-center">Services</h2>
+        <h2 class="text-center">{{headerTitle}}</h2>
         <br>
         <p>  {{pageInfo}} </p>
-        <!-- </div>
-      </div> -->
     </div>
     <div class="col-md-1"></div>
   </div>
   <hr class="white-hr">
   <div class="row" *ngFor="let cardRow of cards">
-    <div class="col-md-1">
-
-    </div>
+    <div class="col-md-1"></div>
     <div class="col-md-5" *ngFor="let card of cardRow">
         <div class="card">
           <div class="card-body">
@@ -25,24 +19,26 @@
             <hr>
             <p class="card-text">{{card?.text}}</p>
             <hr>
-            <p class="cart-subtitle">Advantages</p>
-            <ul class="card-bullet-list">
-                <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
-            </ul>
-            <hr>
-            <p class="cart-subtitle">Price</p>
-            <ul class="card-bullet-list">
-                <li *ngFor="let price of card?.prices">{{price}}</li>
-            </ul>
-            <hr>
+            <div class="advantages" *ngIf="card?.advantages !== undefined">
+              <p class="cart-subtitle">Advantages</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="price" *ngIf="card?.prices !== undefined">
+              <p class="cart-subtitle">Price</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let price of card?.prices">{{price}}</li>
+              </ul>
+              <hr>
+            </div>
             <div class="text-center">
               <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
             </div>
           </div>
         </div>
     </div>
-    <div class="col-md-1">
-
-    </div>
+    <div class="col-md-1"></div>
   </div>
 </div>

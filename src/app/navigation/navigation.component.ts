@@ -20,16 +20,8 @@ export class NavigationComponent implements OnInit {
       link: '/services',
       active: false,
     }, {
-      title: 'Contact',
-      link: '/contact',
-      active: false,
-    }, {
       title: 'About',
       link: '/about',
-      active: false,
-    }, {
-      title: 'Blog',
-      link: '/blog',
       active: false,
     }
   ]

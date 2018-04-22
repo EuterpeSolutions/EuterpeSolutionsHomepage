@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServicesComponent implements OnInit {
   pageInfo = `Euterpe Solutions offers a wide variety of website, and website related, services. We
               strive to maintain affordable prices, convienent solutions, and friendly service.`
+  headerTitle = 'Services'
   cards = [
     [
       {
