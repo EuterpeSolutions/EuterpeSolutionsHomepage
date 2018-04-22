@@ -1,0 +1,92 @@
+<div class="layout">
+<!-- TOP ROW -->
+  <div class="row {{topRowClass}}">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h2 class={{topRowH2Class}}>{{headerTitle}}</h2>
+        <br *ngIf="isHome === undefined">
+        <p class={{topRowPClass}}>  {{pageInfo}} </p>
+        <p class="lead text-center" *ngIf="isHome !== undefined">
+          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+<!-- END TOP ROW -->
+
+<!-- BOTTOM ROW -->
+  <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
+    <div class="{{bootstrapCol}}" *ngFor="let card of cardRow">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
+              <h5 class="card-title">{{card?.title}}</h5>
+            </div>
+            <hr>
+            <p class="card-text">{{card?.text}}</p>
+            <hr>
+            <div class="advantages" *ngIf="card?.advantages !== undefined">
+              <p class="cart-subtitle">Advantages</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="price" *ngIf="card?.prices !== undefined">
+              <p class="cart-subtitle">Price</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let price of card?.prices">{{price}}</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="text-center">
+              <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- END BOTTOM ROW -->
+
+<!-- CONTACT FORM -->
+  <hr class="white-hr">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">Contact</h2>
+    </div>
+  </div>
+  <hr class="white-hr">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p>For more information or to get a quote on a specific project please fill out the following form and the staff at Euterpe Solutions will get back to you as soon as they can.</p>
+      <div class="text-center">
+        <div class="form_bg">
+            <form #form="ngForm" (ngSubmit)="contact(form)">
+                <br/>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname" required ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Last Name" name="lastname" required ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" email required ngModel #email="ngModel">
+                    <span class="help-bpx" *ngIf="email.touched && !email.valid ">Please enter the Email Value</span>
+                </div>
+                 <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Message" required></textarea>
+                </div>
+                <br/>
+                <div class="align-center">
+                    <button type="submit" class="btn btn-default" id="register" [disabled]="!form.valid" >Send</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+<!-- END CONTACT FORM -->
+</div>

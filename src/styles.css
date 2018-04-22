@@ -7,40 +7,56 @@
 html,
 body {
   height: 100%;
-  background-color: #670907;
+  background-color: #403e3e;
+  /* background-image: url('/assets/homebackground.jpg'); */
+  /* //background-color: #000; */
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100%;
 }
 body {
-  display: -ms-flexbox;
+  /* display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
-  justify-content: center;
-  color: #fff;
+  justify-content: center; */
+  color: #ffffff;
 }
 
 /*
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #eee;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #df0000;
+  border: .05rem solid #403e3e;
+  width: 300px;
+  height: 75px;
+}
+
+.btn-secondary {
+  padding-top:20px;
 }
 
 app-root {
-  width: 90%;
-  background-color: #670907;
+  width: 100%;
+  /* background-color: #670907; */
+}
+
+.white-hr {
+  background-color: #777;
+}
+
+.header {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  background-color: #df0000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

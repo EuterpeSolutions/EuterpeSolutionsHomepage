@@ -2,12 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  templateUrl: '../pages.component.html',
+  styleUrls: ['../pages.component.css']
 })
 export class ServicesComponent implements OnInit {
+  topRowClass = 'top-row'
+  headerTitle = 'Services'
+  topRowH2Class = 'text-center'
   pageInfo = `Euterpe Solutions offers a wide variety of website, and website related, services. We
               strive to maintain affordable prices, convienent solutions, and friendly service.`
+  bootstrapCol: string;
   cards = [
     [
       {
@@ -44,26 +48,44 @@ export class ServicesComponent implements OnInit {
           'Contact us for a quote'
         ]
       },
-      {
-        'title': 'Wordpress',
-      },
+
     ],
     [
       {
+        'title': 'WordPress',
+        'text': `
+          WordPress is the most popular website management or blogging system in
+          use with more than 60 million users. WordPress blogs can either be created
+          on WordPress.com or, because it is free and open-source, on a server running
+          WordPress.
+        `,
+        'advantages': [
+          'No technical skills needed to update content',
+          'Common platform with many themes and widgets',
+        ],
+        'prices': [
+          '$1,000 base cost',
+          '$100 per page',
+        ]
+      },
+      {
         'title': 'Hosting',
       },
+    ],
+    [
       {
         'title': 'Consulting',
       },
       {
         'title': 'Security',
       },
-    ],
+    ]
   ]
 
   constructor() { }
 
   ngOnInit() {
+    this.bootstrapCol = 'col-md-' + (12 / this.cards[0].length).toString();
   }
 
 }
