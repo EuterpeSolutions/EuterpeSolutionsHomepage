@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
   constructor() {
     // Which bootstrap col to use for the cards. Determined by 12 / # of cards
     // Ex. col-md-6 if there are 2 cards
-    this.bootstrapCol = 'col-md-' + (12 / this.cards[0].length).toString();
+    this.bootstrapCol = 'col-md-' + (12 / this.cards[0].length).toString() + ' col-sm-' + (12 / this.cards[0].length).toString();
   }
 
   ngOnInit() {}
