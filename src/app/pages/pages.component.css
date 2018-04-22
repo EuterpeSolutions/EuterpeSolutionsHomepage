@@ -16,10 +16,13 @@
   margin-top: 75px;
   margin-bottom: 75px;
   background-color: #df0000;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
+.tall-row {
+  margin-top: 15%;
+}
 /* .content {
   background-color: #df0000;
   padding: 100px;
@@ -34,9 +37,7 @@
 }
 
 /* Space between the logo cover and the cards */
-.tall-row {
-  margin-top: 12%;
-}
+
 
 /* Info Cards at the bottom of the page */
 .card {
