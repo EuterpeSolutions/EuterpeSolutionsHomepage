@@ -54,14 +54,17 @@ export class ServicesComponent implements OnInit {
       {
         'title': 'WordPress',
         'text': `
-          WordPress is the most popular website management or blogging system in
-          use with more than 60 million users. WordPress blogs can either be created
+          WordPress is the most popular CMS (Content Managment System ) in
+          use with more than 60 million users. WordPress sites can either be created
           on WordPress.com or, because it is free and open-source, on a server running
           WordPress.
         `,
         'advantages': [
           'No technical skills needed to update content',
           'Common platform with many themes and widgets',
+          'Ease of use',
+          'built-in blog',
+          'Extend functionality with plugins',
         ],
         'prices': [
           '$1,000 base cost',
@@ -69,15 +72,44 @@ export class ServicesComponent implements OnInit {
         ]
       },
       {
-        'title': 'Hosting',
+        'title': 'Hosting + Maintenance',
+        'text': `
+          An internet hosting service allows your website to be accessible via the
+          World Wide Web. In addition we will do a monthly maintenance on your
+          website to conduct necessary updates and security implementations.
+        `,
+        'advantages': [
+          'Prevent errors from out-of-date software',
+          'Prevent security risk',
+        ],
+        'prices': [
+          '$5-$30/month (depending on website traffic and functionality)'
+        ]
       },
     ],
     [
       {
-        'title': 'Consulting',
+        'title': 'Social Media Consulting, Website Consulting',
+        'text': `
+          We do consultation on your Social Media prescence and how to increase
+          your online prescence. We also do consultation on your website and how
+          it can be improved or how your website can be built. In addition to using
+          the best technology available.
+        `,
+        'prices': [
+          'Consulting is an on basis rate',
+        ],
       },
       {
         'title': 'Security',
+        'text': `
+          Security includes services such as pentesting your website to detect
+          vulnerabilities and recommend the best course of action. In addition,
+          if the vulnerability patch is within our scope we would implement a fix.
+        `,
+        'prices': [
+          'Security is an on basis rate',
+        ]
       },
     ]
   ]
