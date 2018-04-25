@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   topRowH2Class = 'text-center'
   pageInfo = `Euterpe Solutions is a software contracting LLC started by three University of South
               Carolina Computer Science graduates.`
+  topRowPClass = 'text-center'
   bootstrapCol: string;
   cards = [
     [
