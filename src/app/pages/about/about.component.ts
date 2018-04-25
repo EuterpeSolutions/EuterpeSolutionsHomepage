@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
     [
       {
         'title': 'Pierce Matthews',
-        'text': `bio goes here`
+        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Develop, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
       },
       {
         'title': 'Lawton Mizell',
