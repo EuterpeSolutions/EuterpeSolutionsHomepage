@@ -20,7 +20,8 @@ export class AboutComponent implements OnInit {
       },
       {
         'title': 'Lawton Mizel - Full Stack Developer',
-        'text': `I strive to create quality products with an emphasis on good code
+        'text': `Lawton Mizell is a Software Developer with 3 years of experience. He has worked in roles such as full stack development,
+          data engineer, and QA Tester. He strives to create quality products with an emphasis on good code
           and efficient design.`
       },
       {
