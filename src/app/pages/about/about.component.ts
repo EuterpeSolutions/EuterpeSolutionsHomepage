@@ -19,8 +19,9 @@ export class AboutComponent implements OnInit {
         'text': `bio goes here`
       },
       {
-        'title': 'Lawton Mizell',
-        'text': `bio goes here`
+        'title': 'Lawton Mizel - Full Stack Developer',
+        'text': `I strive to create quality products with an emphasis on good code
+          and efficient design.`
       },
       {
         'title': 'Tyler Moon',
