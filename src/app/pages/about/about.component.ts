@@ -11,12 +11,13 @@ export class AboutComponent implements OnInit {
   topRowH2Class = 'text-center'
   pageInfo = `Euterpe Solutions is a software contracting LLC started by three University of South
               Carolina Computer Science graduates.`
+  topRowPClass = 'text-center'
   bootstrapCol: string;
   cards = [
     [
       {
         'title': 'Pierce Matthews',
-        'text': `bio goes here`
+        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Develop, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
       },
       {
         'title': 'Lawton Mizel - Full Stack Developer',
