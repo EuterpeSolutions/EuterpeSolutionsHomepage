@@ -26,7 +26,10 @@ export class AboutComponent implements OnInit {
       },
       {
         'title': 'Tyler Moon',
-        'text': `bio goes here`
+        'text': `Tyler Moon is a Software Developer with experience in serveral different industries.
+                 He has also worked as a Dev Ops engineer and System Administrator. Since learning to
+                 program in high school, Tyler has always been on the lookout for new and exciting technologies
+                 to learn.`
       }
     ],
   ]
