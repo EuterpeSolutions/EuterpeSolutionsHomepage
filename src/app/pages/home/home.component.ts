@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -45,7 +46,7 @@ export class HomeComponent implements OnInit {
   bootstrapCol:string;
 
 
-  constructor() {
+  constructor(private http: HttpClient) {
     // Which bootstrap col to use for the cards. Determined by 12 / # of cards
     // Ex. col-md-6 if there are 2 cards
     this.bootstrapCol = 'col-md-' + (12 / this.cards[0].length).toString() + ' col-sm-' + (12 / this.cards[0].length).toString();
@@ -54,7 +55,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   contact(regForm:NgForm){
-   console.log(regForm);
+   console.log(regForm.form.value);
+   const req = this.http.post('https://qrv1mco3qk.execute-api.us-east-1.amazonaws.com/Test/contact',
+                  regForm.form.value).subscribe(res=> {console.log(res);},err => {console.log("Error occured", err)});
   }
 
 }
