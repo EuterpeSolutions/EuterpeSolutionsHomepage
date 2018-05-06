@@ -60,3 +60,13 @@ app-root {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.contact-section {
+  background-color: #fff;
+  color: #333;
+  margin-top: 75px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
