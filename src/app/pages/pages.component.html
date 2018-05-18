@@ -21,6 +21,8 @@
           <div class="card-body">
             <div class="text-center">
               <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
+              <img class=card-img-top src={{card?.src}} width="200" height="600">
+              <br><br>
               <h5 class="card-title">{{card?.title}}</h5>
             </div>
             <hr>
