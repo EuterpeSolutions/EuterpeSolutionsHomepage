@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       } , {
           'title': 'Wordpress Setup',
           'text': 'Want a website using the most popular blogging\
-                   platform in the market? We got your covered.\
+                   platform in the market? We got you covered.\
                    We deliver customizable Wordpress sites or blogs.',
           'icon': 'wordpress',
       } , {
