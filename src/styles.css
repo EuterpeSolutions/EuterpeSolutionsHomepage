@@ -7,3 +7,10 @@
   margin-right: 0px;
   margin-left: 0px;
 }
+
+body {
+  background: url("/assets/business-background.jpeg");
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
