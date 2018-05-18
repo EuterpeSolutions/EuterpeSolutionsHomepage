@@ -1,18 +1,18 @@
 <div class="layout">
-<!-- TOP ROW -->
-  <div class="row {{topRowClass}}">
+<!-- HOME TOP ROW -->
+  <div class="row {{topRowClass}}" *ngIf="isHome !== undefined">
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <h2 class={{topRowH2Class}}>{{headerTitle}}</h2>
         <br *ngIf="isHome === undefined">
         <p class={{topRowPClass}}>  {{pageInfo}} </p>
-        <p class="lead text-center" *ngIf="isHome !== undefined">
-          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
+        <p class="lead text-center" >
+          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn More</a>
         </p>
     </div>
     <div class="col-md-1"></div>
   </div>
-<!-- END TOP ROW -->
+<!-- END HOME TOP ROW -->
 
 <!-- BOTTOM ROW -->
   <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
@@ -46,7 +46,7 @@
   </div>
 <!-- END BOTTOM ROW -->
 <!-- CONTACT FORM -->
-  <div class="content-inverse">
+  <div class="content-inverse contact">
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-center">Contact</h2>
@@ -63,6 +63,3 @@
     </div>
   </div>
 <!-- END CONTACT FORM -->
-
-<div style="height: 200px;"></div>
-</div>

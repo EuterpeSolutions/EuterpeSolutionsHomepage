@@ -2,3 +2,8 @@
 
 /* Import for bootstrap */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}

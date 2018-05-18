@@ -5,6 +5,9 @@
   background-color: #af473c;
   padding: 7px;
   padding-top: 9px;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
 }
 .nav-masthead .nav-link {
   /* Style for "Home" */

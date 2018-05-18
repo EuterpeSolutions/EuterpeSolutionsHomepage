@@ -1,0 +1,37 @@
+.tall-row {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  /* background: url("/assets/apple-apple-background.jpg"); */
+  background: url("/assets/apple-apple-background.png");
+  background-position: right top;
+  background-size: 98% 120%;
+  background-repeat: no-repeat;
+}
+
+
+/* Learn More btn */
+.lead .btn{
+  width: 400px;
+  height: 100px;
+  padding-top: 35px;
+  border-radius: 13px;
+  background-color: #af473c;
+}
+
+.content {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #af473c;
+}
+
+.card {
+  border-radius: 35px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
