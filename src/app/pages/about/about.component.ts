@@ -20,7 +20,8 @@ export class AboutComponent implements OnInit {
         'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Develop, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
       },
       {
-        'title': 'Lawton Mizel - Full Stack Developer',
+        'src': '/assets/image/AA_464.jpg'
+        'title': 'Lawton Mizell - Full Stack Developer',
         'text': `Lawton Mizell is a Software Developer with 3 years of experience. He has worked in roles such as full stack development,
           data engineer, and QA Tester. He strives to create quality products with an emphasis on good code
           and efficient design.`
