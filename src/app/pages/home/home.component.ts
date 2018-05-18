@@ -42,6 +42,15 @@ export class HomeComponent implements OnInit {
     ]
   ]
 
+  testimonials = [
+    [
+      {
+        'name': 'Joe Bro',
+        'message': '"Euterpe Solutions delivered an outstanding product at an amazing price!"'
+      }
+    ]
+  ]
+
   // Which bootstrap col to use for the cards
   bootstrapCol:string;
 
