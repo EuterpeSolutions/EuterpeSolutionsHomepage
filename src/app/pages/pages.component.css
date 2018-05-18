@@ -1,14 +1,24 @@
 .tall-row {
-  padding-top: 20%;
-  padding-bottom: 20%;
-  /* background: url("/assets/apple-apple-background.jpg"); */
+  padding-top: 22%;
+  padding-bottom: 22%;
   background: url("/assets/apple-apple-background.png");
   background-position: right top;
   background-size: 98% 120%;
   background-repeat: no-repeat;
 }
 
+.top-row {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background: url("/assets/services-background.png");
+  background-position: right top;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+}
 
+.top-row h1 {
+  font-size: 120px;
+}
 /* Learn More btn */
 .lead .btn{
   width: 400px;
@@ -19,6 +29,10 @@
 }
 
 .content {
+  margin-top: 15px;
+}
+
+.content-row {
   padding-top: 160px;
   padding-bottom: 160px;
   background-color: #af473c;
@@ -30,6 +44,7 @@
   background-color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
+  height: 100%;
 }
 
 .testimonials {
