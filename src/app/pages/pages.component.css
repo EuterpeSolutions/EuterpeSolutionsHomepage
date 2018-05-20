@@ -39,6 +39,10 @@
   margin-bottom: 200px;
 }
 
+.image {
+  height: 150px;
+}
+
 .card {
   border-radius: 35px;
   background-color: #ffffff;

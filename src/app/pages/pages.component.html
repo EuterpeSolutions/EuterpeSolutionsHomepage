@@ -22,15 +22,37 @@
 <!-- END HOME TOP ROW -->
 
 <!-- BOTTOM ROW -->
-  <div class="content-row">
-    <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
-      <div class="{{bootstrapCol}}" *ngFor="let card of cardRow">
-          <div class="card">
-            <div class="card-body">
-              <div class="text-center">
-                <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
-                <h5 class="card-title">{{card?.title}}</h5>
-              </div>
+<div class="content-row">
+  <div class="row pageInfo" *ngIf="isHome === undefined">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <br>
+          <p>{{pageInfo}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
+    <div class="{{bootstrapCol}}" *ngFor="let card of cardRow">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
+              <img class="image" src={{card?.src}} *ngIf="card?.src !== undefined">
+              <br><br>
+              <h5 class="card-title">{{card?.title}}</h5>
+            </div>
+            <hr>
+            <p class="card-text">{{card?.text}}</p>
+            <hr>
+            <div class="advantages" *ngIf="card?.advantages !== undefined">
+              <p class="cart-subtitle">Advantages</p>
+              <ul class="card-bullet-list">
+                  <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
+              </ul>
               <hr>
               <p class="card-text">{{card?.text}}</p>
               <hr>
@@ -53,7 +75,7 @@
       </div>
     </div>
   </div>
-
+</div>
 <!-- END BOTTOM ROW -->
 <!-- TESTIMONIAL FORM -->
   <div class="testimonials" *ngIf="testimonials !== undefined">
