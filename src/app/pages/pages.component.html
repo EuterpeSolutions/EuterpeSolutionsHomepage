@@ -41,7 +41,9 @@
           <div class="card-body">
             <div class="text-center">
               <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
-              <img class="image" src={{card?.src}} *ngIf="card?.src !== undefined">
+              <a href="{{card?.link}}" *ngIf="card?.link !== undefined">
+                <img class="image" src={{card?.src}} *ngIf="card?.src !== undefined">
+              </a>
               <br><br>
               <h5 class="card-title">{{card?.title}}</h5>
             </div>

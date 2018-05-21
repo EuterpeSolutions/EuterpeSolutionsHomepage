@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const appRoutes: Routes = [
   {
@@ -29,6 +30,10 @@ const appRoutes: Routes = [
     component: ServicesComponent,
   },
   {
+    path: 'portfolio',
+    component: PortfolioComponent,
+  },
+  {
     path: 'about',
     component: AboutComponent,
   }
@@ -41,7 +46,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ServicesComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
