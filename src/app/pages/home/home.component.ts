@@ -49,6 +49,15 @@ export class HomeComponent implements OnInit {
     ]
   ]
 
+  testimonials = [
+    [
+      {
+        'name': 'Joe Bro',
+        'message': '"Euterpe Solutions delivered an outstanding product at an amazing price!"'
+      }
+    ]
+  ]
+
   // Which bootstrap col to use for the cards
   bootstrapCol:string;
 
@@ -60,11 +69,5 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {}
-
-  contact(regForm:NgForm){
-   console.log(regForm.form.value);
-   const req = this.http.post('https://qrv1mco3qk.execute-api.us-east-1.amazonaws.com/Test/contact',
-                  regForm.form.value).subscribe(res=> {console.log(res);},err => {console.log("Error occured", err)});
-  }
 
 }

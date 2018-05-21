@@ -11,6 +11,8 @@ export class ServicesComponent implements OnInit {
   topRowH2Class = 'text-center'
   pageInfo = `Euterpe Solutions offers a wide variety of website, and website related, services. We
               strive to maintain affordable prices, convienent solutions, and friendly service.`
+  bottomRowClass = 'content'
+
   bootstrapCol: string;
   cards = [
     [

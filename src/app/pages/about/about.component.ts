@@ -17,16 +17,17 @@ export class AboutComponent implements OnInit {
     [
       {
         'title': 'Pierce Matthews',
-        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Develop, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
+        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Development, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
       },
       {
-        'src': '/assets/image/AA_464.jpg'
-        'title': 'Lawton Mizell - Full Stack Developer',
+        'src': '/assets/image/AA_464.jpg',
+        'title': 'Lawton Mizell',
         'text': `Lawton Mizell is a Software Developer with 3 years of experience. He has worked in roles such as full stack development,
           data engineer, and QA Tester. He strives to create quality products with an emphasis on good code
           and efficient design.`
       },
       {
+        'src': '/assets/image/headshot.jpeg',
         'title': 'Tyler Moon',
         'text': `Tyler Moon is a Software Developer with experience in serveral different industries.
                  He has also worked as a Dev Ops engineer and System Administrator. Since learning to

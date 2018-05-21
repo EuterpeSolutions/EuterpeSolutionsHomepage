@@ -1,85 +1,72 @@
-/* Info Cards at the bottom of the page */
-.card {
-  color: #333;
-  height: 100%;
-}
-
-.row {
-  margin-top: 30px;
-}
-
-.cart-subtitle {
-  font-weight: bolder;
+.tall-row {
+  padding-top: 22%;
+  padding-bottom: 22%;
+  background: url("/assets/apple-apple-background.png");
+  background-position: right top;
+  background-size: 98% 120%;
+  background-repeat: no-repeat;
 }
 
 .top-row {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  background-color: #df0000;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background: url("/assets/services-background.png");
+  background-position: right top;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
 }
 
-.tall-row {
-  margin-top: 15%;
+.top-row h1 {
+  font-size: 120px;
 }
-/* .content {
-  background-color: #df0000;
-  padding: 100px;
-  margin-left: -15px;
-  margin-right: -15px;
-} */
-
-/* Learn more button */
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
-/* Space between the logo cover and the cards */
-
-
-/* Info Cards at the bottom of the page */
-.card {
-  color: #333;
-  background-color: #fff;
+/* Learn More btn */
+.lead .btn{
+  width: 40%;
+  height: 100px;
+  padding-top: 35px;
+  border-radius: 13px;
+  background-color: #af473c;
 }
 
 .content {
-  background-color: #df0000;
-  padding: 100px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: 13%;
-  padding-top: 45px;
-  /* color: #c2c2c2; */
+  margin-top: 15px;
 }
 
-.content-inverse {
+.content-row {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #af473c;
+  margin-bottom: 200px;
+}
+
+.image {
+  height: 150px;
+}
+
+.card {
+  border-radius: 35px;
   background-color: #ffffff;
-  padding: 100px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: 13%;
-  color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
 }
 
-.centerheader {
-  text-align: center;
-  margin-bottom:100px;
-  margin-top:0px;
-  padding-top:0px;
+.testimonials {
+  background-color: #fff;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
-.centericon {
-  vertical-align: center;
+.testimonials .card {
+  background-color: #3c3c3c;
+  color: #ddd;
 }
 
-input.ng-invalid.ng-touched
-{
-   border-color: red;
+.testimonials hr {
+  background-color: #ccc;
 }
 
-button a {
-  color: #333;
+.contact {
+  padding-top: 75px;
+  padding-bottom: 50px;
 }

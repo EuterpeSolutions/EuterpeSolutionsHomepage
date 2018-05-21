@@ -1,27 +1,47 @@
 <div class="layout">
-<!-- TOP ROW -->
-  <div class="row {{topRowClass}}">
+<!-- HOME TOP ROW -->
+  <div class="row {{topRowClass}}" *ngIf="isHome !== undefined">
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <h2 class={{topRowH2Class}}>{{headerTitle}}</h2>
         <br *ngIf="isHome === undefined">
         <p class={{topRowPClass}}>  {{pageInfo}} </p>
-        <p class="lead text-center" *ngIf="isHome !== undefined">
-          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn more</a>
+        <p class="lead text-center" >
+          <a routerLink="/services" class="btn btn-lg btn-secondary">Learn More</a>
         </p>
     </div>
     <div class="col-md-1"></div>
   </div>
-<!-- END TOP ROW -->
+  <div class="row {{topRowClass}}" *ngIf="isHome === undefined">
+    <div class="col-md-8"></div>
+    <div class="col-md-2">
+        <h1 class={{topRowH2Class}}>{{headerTitle}}</h1>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+<!-- END HOME TOP ROW -->
 
 <!-- BOTTOM ROW -->
+<div class="content-row">
+  <div class="row pageInfo" *ngIf="isHome === undefined">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <br>
+          <p>{{pageInfo}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
   <div class="row {{bottomRowClass}}" *ngFor="let cardRow of cards">
     <div class="{{bootstrapCol}}" *ngFor="let card of cardRow">
         <div class="card">
           <div class="card-body">
             <div class="text-center">
               <fa name={{card?.icon}} class="fa-5x center" *ngIf="card?.icon !== undefined"></fa>
-              <img class=card-img-top src={{card?.src}} width="200" height="600" *ngIf="card?.src !== undefined">
+              <img class="image" src={{card?.src}} *ngIf="card?.src !== undefined">
               <br><br>
               <h5 class="card-title">{{card?.title}}</h5>
             </div>
@@ -34,21 +54,50 @@
                   <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
               </ul>
               <hr>
+              <p class="card-text">{{card?.text}}</p>
+              <hr>
+              <div class="advantages" *ngIf="card?.advantages !== undefined">
+                <p class="cart-subtitle">Advantages</p>
+                <ul class="card-bullet-list">
+                    <li *ngFor="let advantage of card?.advantages">{{advantage}}</li>
+                </ul>
+                <hr>
+              </div>
+              <div class="price" *ngIf="card?.prices !== undefined">
+                <p class="cart-subtitle">Price</p>
+                <ul class="card-bullet-list">
+                    <li *ngFor="let price of card?.prices">{{price}}</li>
+                </ul>
+                <hr>
+              </div>
             </div>
-            <div class="price" *ngIf="card?.prices !== undefined">
-              <p class="cart-subtitle">Price</p>
-              <ul class="card-bullet-list">
-                  <li *ngFor="let price of card?.prices">{{price}}</li>
-              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END BOTTOM ROW -->
+<!-- TESTIMONIAL FORM -->
+  <div class="testimonials" *ngIf="testimonials !== undefined">
+    <div class="row" *ngFor="let testRow of testimonials">
+      <div class="{{bootstrapCol}}" *ngFor="let test of testRow">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <h5 class="card-title">{{test?.name}}</h5>
+              </div>
+              <hr>
+              <p class="card-text">{{test?.message}}</p>
               <hr>
             </div>
           </div>
-        </div>
+      </div>
     </div>
   </div>
-<!-- END BOTTOM ROW -->
+
+<!-- END TESTIMONIAL FORM -->
 <!-- CONTACT FORM -->
-  <div class="content-inverse">
+  <div class="content-inverse contact">
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-center">Contact</h2>
@@ -65,6 +114,3 @@
     </div>
   </div>
 <!-- END CONTACT FORM -->
-
-<div style="height: 200px;"></div>
-</div>
