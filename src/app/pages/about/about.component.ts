@@ -16,8 +16,10 @@ export class AboutComponent implements OnInit {
   cards = [
     [
       {
+        'src': '/assets/image/pierce_temp_photo.jpg',
         'title': 'Pierce Matthews',
-        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles, including Full-Stack Development, Team Lead, and QA Tester. In his free time he enjoys playing guitar and reading.`
+        'text': `Pierce Matthews is a Software Developer with 3 years experience. He has worked in several roles,
+          including Full-Stack Development, Team Lead, and QA Tester. He enjoys well built and well engineered software.`
       },
       {
         'src': '/assets/image/AA_464.jpg',
