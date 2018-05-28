@@ -17,11 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
     component: HomeComponent,
   },
   {
