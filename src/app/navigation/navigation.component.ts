@@ -13,7 +13,7 @@ export class NavigationComponent implements OnInit {
   links = [
     {
       title: 'Home',
-      link: '/home',
+      link: '',
       active: false,
     }, {
       title: 'Services',

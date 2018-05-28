@@ -18,11 +18,6 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
     component: HomeComponent,
   },
   {
