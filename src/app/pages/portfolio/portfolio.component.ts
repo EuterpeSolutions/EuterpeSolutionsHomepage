@@ -11,7 +11,8 @@ export class PortfolioComponent implements OnInit {
   topRowH2Class = 'text-center'
   pageInfo = `View our work.`
   bottomRowClass = 'content'
-
+  isHome = undefined;
+  testimonials = undefined;
   bootstrapCol: string;
   cards = [
     [

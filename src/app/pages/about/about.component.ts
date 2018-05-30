@@ -13,6 +13,8 @@ export class AboutComponent implements OnInit {
               Carolina Computer Science graduates.`
   topRowPClass = 'text-center'
   bootstrapCol: string;
+  isHome = undefined;
+  testimonials = undefined;
   cards = [
     [
       {

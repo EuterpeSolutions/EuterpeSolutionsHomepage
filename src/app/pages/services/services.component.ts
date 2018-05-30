@@ -12,7 +12,8 @@ export class ServicesComponent implements OnInit {
   pageInfo = `Euterpe Solutions offers a wide variety of website, and website related, services. We
               strive to maintain affordable prices, convienent solutions, and friendly service.`
   bottomRowClass = 'content'
-
+  isHome = undefined;
+  testimonials = undefined;
   bootstrapCol: string;
   cards = [
     [
