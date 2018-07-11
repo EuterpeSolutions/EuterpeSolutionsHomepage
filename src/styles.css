@@ -14,3 +14,11 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.logo_title {
+  font-size: 18pt;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-left: 10px;
+  line-height: 45px;
+}

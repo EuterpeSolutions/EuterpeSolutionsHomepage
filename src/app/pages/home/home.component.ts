@@ -52,8 +52,8 @@ export class HomeComponent implements OnInit {
   testimonials = [
     [
       {
-        'name': 'Joe Bro',
-        'message': '"Euterpe Solutions delivered an outstanding product at an amazing price!"'
+        'name': 'Kate Bach',
+        'message': '"Euterpe Solutions is a team of professionals with sharp skills, quick response time, and creative solutions. The changes Euterpe created within my tech infrastructure has freed up enough time for me to double in size without having to double myself nor my staff. To say that I am pleased would be an understatement. I award this team 5 stars, 10 thummbs up, and the highest recommendation possible. I already have my next 2 projects lined up with Euterpe Solutions."'
       }
     ]
   ]
