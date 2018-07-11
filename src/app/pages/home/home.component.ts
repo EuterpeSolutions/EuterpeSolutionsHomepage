@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
           'text': 'Your website should be the forefront of your\
                    business or project in the digital space. We promise to\
                    deliver websites that are professionally made,\
-                   technically advanced and esthetically appealing.',
+                   technically advanced and aesthetically appealing.',
           'icon': 'file-text',
       } , {
           'title': 'Wordpress Setup',
